@@ -4,21 +4,16 @@ int main()
 {
     int n,i,j,o,u=0;
     scanf("%d",&n);
+    char w[n][50];
     if(n>0&&n<100)
     {
-        char w[n][50];
         for(i=0; i<n; i++)
         {
-            scanf("%[^\n]s",w[i]);
+            scanf("%s",w[i]);
         }
-        for(i=0; i<n; i++)
-        {
-            for(j=0; w[j]!='\0'; j++)
-            {
-
-            }
             for(i=0; i<n; i++)
             {
+                o=1;
                 for(j=0; w[j]!='\0'; j++)
                     if(w[i][j]>='A'&&w[i][j]<='E')
                     {
@@ -81,9 +76,9 @@ int main()
                     }
                     else
                         break;
-
+             printf("%d\n",o);
             }
-            printf("%d\n",o);
+
         }
         return 0;
     }
