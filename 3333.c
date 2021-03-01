@@ -4,7 +4,7 @@ int main()
 {
  char w[200];
  int i=0,j=0;
- gets(w);
+ scanf("%s",w);
  for(i=0;w[i]!='\0';i++)
  {
      if(w[i] != w[i+1])
