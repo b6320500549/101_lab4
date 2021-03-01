@@ -3,22 +3,14 @@
 int main()
 {
  char w[200];
- int i=0;
+ int i=0,j=0;
  gets(w);
  for(i=0;w[i]!='\0';i++)
  {
-     if(w[i]==w[i+1])
+     if(w[i] != w[i+1])
      {
-         for(j=i;w[j]!=w[j+1];j++)
-         {
-
-         }
-         if(w[j]!=' ')
-         {
-             printf("%c",w[j-1]);
-         }
-
+        if(w[i]!=' ')
+        printf("%c",w[i]);
      }
-
  }
 }
